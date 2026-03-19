@@ -1,0 +1,3 @@
+# CRC Collaboration Explanation
+
+TaskManager collaborates with Task because its responsibilities — storing tasks, adding new tasks, finding a task by ID, and returning tasks by status — all require it to directly work with Task objects to fulfill those operations. Task, on the other hand, is only responsible for storing its own information, updating its status, and providing its details, none of which require any knowledge of or interaction with the TaskManager. Since Task's responsibilities are entirely self-contained, it has no need to reference or depend on TaskManager, making the collaboration strictly one-directional.
